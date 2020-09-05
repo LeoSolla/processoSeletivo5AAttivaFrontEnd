@@ -1,0 +1,217 @@
+input, textarea{
+    font-family: Roboto;
+    font-size: 14px;
+    color: #4a4a4a;
+}
+button:focus, 
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.ownz {
+    background-color: #edeef0;
+}
+
+.header {
+    height: auto;
+    background-color: #ed1d24;
+
+    img {
+        width: 240px;
+        height: 95px;
+    }
+}
+
+.container {
+    padding: 36px;
+    border-bottom: solid 7px #ed1d24;
+    background-color: #f4f8fb;
+
+    img {
+        width: 100%;
+    }
+
+    .title-lerolero {
+
+        h1 {
+            margin: 0;
+            margin-bottom: 16px;
+            font-family: Roboto;
+            font-size: 36px;
+            font-weight: 300;
+            line-height: 1.61;
+            color: #ed1d24;
+        }
+    }
+}
+
+.lerolero-main {
+    padding: 35px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px 0 rgba(69, 91, 99, 0.08);
+    background-color: #ffffff;
+
+    .search-content {
+        display: flex;
+        width: 43%;
+        justify-content: space-between;
+        margin-bottom: 31px;
+    }
+
+    .search-input {
+        width: 385px;
+        height: 51px;
+        border: 1px solid #fff;
+        border-radius: 8px;
+        border-bottom: 1px solid #9b9b9b;
+        margin-right: 38px;
+        box-shadow: 1px 2px 0 0 rgba(69, 91, 99, 0.08);
+    }
+
+    .filter {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .filter-icon {
+            width: 24px;
+            height: 24px;
+            object-fit: contain;
+            margin-right: 10px;
+        }
+        .filter-label {
+            width: 39px;
+            font-family: Roboto;
+            font-size: 14px;
+            color: #4a4a4a;
+            text-transform: uppercase;
+        }
+        button {
+            background: transparent;
+            border: 0;
+            cursor: pointer;
+
+            .filter-grey {
+                filter: invert(62%) sepia(9%) saturate(10%) hue-rotate(8deg) brightness(98%) contrast(93%);
+            }
+        }
+    }
+}
+
+
+.hero {
+    width: 100%;
+    max-width: 290px;
+    height: 220px;
+    border-radius: 8px;
+    border: 1px solid #d8dde6;
+    border-bottom: 1px solid #ed1d24;
+    background-color: #fff;
+    margin-bottom: 36px;
+    font-family: Roboto;
+    box-shadow: 0 2px 6px 0 rgba(69, 91, 99, 0.08);
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .thumb-hero {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 15px;
+
+            .img-size {
+                width: 56px;
+                height: 56px;
+                border-radius: 30px;
+            }
+    
+            .name-hero {
+                width: 100%;
+                height: 23px;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 1.44;
+                color: #4a4a4a;
+                margin-bottom: 13px;
+            }
+        }
+
+        .name-character {
+            margin-bottom: 20px;
+
+            .name-of-hero {
+                font-family: Roboto;
+                font-size: 14px;
+                line-height: 1.64;
+                text-align: center;
+                color: #ed1d24;
+                margin-bottom: 20px;
+            }
+        }
+    
+        .separator {
+            width: 54px;
+            background: #d8dde6;
+            border: solid 1px #d8dde6;
+        }
+
+        .description-hero {
+            width: 100%;
+            max-width: 248px;
+            height: 44px;
+            font-family: Roboto;
+            font-size: 14px;
+            line-height: 1.64;
+            color: #4a4a4a;
+        }
+    }
+}
+
+
+
+ .heroes-list {
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.description-hero {
+    width: 100%;
+    max-width: 248px;
+    height: 44px;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 1.64;
+    color: #4a4a4a;
+}
+
+.hero-pages {
+    width: 100%;
+}
+
+.footer {
+    width: 100%;
+    height: 105px;
+    background-color: #e6e7e8;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 117px;
+
+    span {
+        font-family: Roboto;
+        font-size: 14px;
+        text-align: center;
+        color: #4a4a4a;
+    }
+}

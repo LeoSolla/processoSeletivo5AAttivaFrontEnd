@@ -1,0 +1,90 @@
+  <div class="ownz">
+  
+  <div class="header">
+    <img src="../assets/marvel-logo.png" alt="Marvel">
+  </div>
+
+  <div class="container">
+
+      <div class="lerolero-main">
+
+        <div class="title-lerolero">
+          <h1>Character</h1>
+        </div>
+  
+        <div class="search-content">
+
+          <div class="search">
+              <input
+                class="search-input"
+                placeholder="Characters"
+                type="text"
+                (input)="onChange($event.target.value)"
+              />
+          </div>
+
+          <div class="filter">
+            <img src="../assets/filter.svg" class="filter-icon">
+            <span class="filter-label">a-z</span>
+            <button (click)="send()">
+              <img src="../assets/arrow-down.svg" class="filter-grey">
+            </button>
+          </div>
+          
+        </div>
+
+        <div class="heroes-list">
+
+          <div *ngFor="let hero of heroes | paginate:{itemsPerPage: 12, currentPage: p}" class="hero">
+            
+            <div class="hero-content">
+
+              <div class="thumb-hero">
+                <img [src]="hero.thumbnail.path+'.'+hero.thumbnail.extension" alt="{{hero.name}}" class="img-size">
+                <span class="name-hero">{{hero.name}}</span>
+              </div>
+
+              <div class="name-character">
+                <span class="name-of-hero">{{hero.name}}</span>
+              </div>
+
+              <div class="separator"></div>
+
+              <div class="description-hero">
+                <p>{{descriptionHero}}</p>
+              </div>
+
+            </div>
+
+          </div> 
+          
+          <div class="hero-pages">
+
+            <div id="pagination">
+
+              <pagination-controls 
+                  (pageChange)="p=$event" 
+                  previousLabel=""  
+                  maxSize="3" nextLabel="" 
+                  responsive="true">
+              </pagination-controls>
+
+            </div>  
+
+          </div>
+
+        </div>
+        
+      </div>
+
+    </div>  
+
+    <div class="footer">
+      <span>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br/>
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+      </span>
+    </div>
+
+
+</div>
