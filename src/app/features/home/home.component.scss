@@ -192,6 +192,12 @@ textarea:focus, input:focus{
     font-size: 14px;
     line-height: 1.64;
     color: #4a4a4a;
+    
+    .text-description {
+        height: 44px;
+        word-break: break-all;
+        overflow: hidden;
+    }
 }
 
 .hero-pages {

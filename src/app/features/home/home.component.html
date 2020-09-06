@@ -51,13 +51,14 @@
               <div class="separator"></div>
 
               <div class="description-hero">
-                <p>{{descriptionHero}}</p>
+                <p *ngIf="!hero.description">{{descriptionHero}}</p>
+                <p class="text-description">{{hero.description}}</p>
               </div>
 
             </div>
 
           </div> 
-          
+
           <div class="hero-pages">
 
             <div id="pagination">
